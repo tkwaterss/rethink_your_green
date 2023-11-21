@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+  background-color: #366314;
+}
+.rightHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*^ Logo  */
+.companyLogo {
+  height: 160px;
+}
+
+
+/*^ Nav Links */
+nav {
+ border: solid;
+}
+.navLinksList {
+  list-style: none;
+  border: solid;
+  width: 500px;
+  display: flex;
+  gap: 20px;
+}
+
+/*^ News Letter Signup  */
+.newsLetterSignup {
+  border: solid;
+  width: 240px;
+  height: 60px;
+}

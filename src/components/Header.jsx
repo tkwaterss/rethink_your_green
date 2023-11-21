@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 import company_logo from "../images/company_logo.png";
+import NewsletterSignup from "./NewsletterSignup";
 
 const Header = () => {
   const activeStyle = ({ isActive }) => {
@@ -46,7 +47,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className={classes.newsLetterSignup}>News Letter Signup</div>
+        <NewsletterSignup/>
       </div>
     </header>
   );

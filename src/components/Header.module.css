@@ -41,11 +41,3 @@ header {
   cursor: pointer;
   text-decoration: underline;
 }
-
-/*^ News Letter Signup */
-.newsLetterSignup {
-  border: solid;
-  width: 360px;
-  height: 80px;
-  align-self: end;
-}

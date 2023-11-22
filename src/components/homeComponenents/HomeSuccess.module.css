@@ -1,0 +1,18 @@
+.successStoriesSection {
+  background-color: #D3E181;
+  width: 100vw;
+}
+.successStoriesSection h3{
+  text-align: center;
+  padding-top: 20px;
+  color: #C1518D;
+}
+
+.successStories {
+  padding: 40px 80px 60px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}

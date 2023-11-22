@@ -3,7 +3,7 @@ import classes from "./HomeIntro.module.css";
 
 const HomeIntro = () => {
   return (
-    <section>
+    <section className={classes.homeIntro}>
       <div className={classes.intro}>
         <h1>Clover is Awesome!</h1>
         <h2>Salt Lake City, UT</h2>

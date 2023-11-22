@@ -1,4 +1,4 @@
-section {
+.homeIntro {
   width: 100vw;
   background-image: url("../../images/bright_green_clover_field.jpg");
   background-position: center;
@@ -16,19 +16,11 @@ section {
   gap: 20px;
   color: white;
 }
-.intro h1 {
-  font-size: 60px;
-  font-weight: 600;
-}
-.intro h2 {
-  font-size: 40px;
-  font-weight: 600;
-}
 
 /* ^ Stats Section */
 
 .stats {
-  background: rgba(112, 149, 9, .85);
+  background: linear-gradient(to top, rgba(112, 149, 9, .85) 95%, rgba(112, 149, 9, 0));
   height: 400px;
   display: flex;
   justify-content: space-evenly;
@@ -49,6 +41,5 @@ section {
   border-radius: 80px;
 }
 .statsTitle{
-  font-size: 26px;
   color: #DB8EBE;
 }

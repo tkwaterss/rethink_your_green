@@ -1,0 +1,38 @@
+.successStoryCard {
+  height: 450px;
+  width: 400px;
+  background-color: #366314;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 0px #366314;
+}
+.successStoryCard:hover {
+  box-shadow: 5px 5px 8px 0px #366314;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out
+  
+}
+.storyImage {
+  background-image: url("../../images/verticle_clover_field.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+.storyDescription {
+  height: 150px;
+  padding: 0px 16px 8px 16px;
+  text-overflow: clip;
+}
+.storyDescription h4 {
+  line-height: 2em;
+}
+.storyDescription p {
+  font-size: 16px;
+  line-height: 1.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

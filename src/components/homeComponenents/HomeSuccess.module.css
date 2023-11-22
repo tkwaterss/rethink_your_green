@@ -1,11 +1,11 @@
 .successStoriesSection {
-  background-color: #D3E181;
+  background-color: rgba(112, 149, 9);
   width: 100vw;
 }
 .successStoriesSection h3{
   text-align: center;
   padding-top: 20px;
-  color: #C1518D;
+  color: white;
 }
 
 .successStories {

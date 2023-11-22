@@ -20,7 +20,7 @@
 /* ^ Stats Section */
 
 .stats {
-  background: linear-gradient(to top, rgba(112, 149, 9, .85) 95%, rgba(112, 149, 9, 0));
+  background: linear-gradient(to top,rgba(112, 149, 9) 5%, rgba(112, 149, 9, .85) 95%, rgba(112, 149, 9, 0));
   height: 400px;
   display: flex;
   justify-content: space-evenly;

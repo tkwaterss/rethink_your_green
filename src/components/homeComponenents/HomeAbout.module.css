@@ -1,0 +1,18 @@
+.aboutSection{
+  width: 100vw;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  background-color: #D3E181;
+}
+.aboutSection h3 {
+
+}
+.aboutSection p {
+  width: 600px;
+  text-align: justify;
+  font-size: 20px;
+}

@@ -1,8 +1,11 @@
 import React from 'react'
+import classes from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <div className={classes.socialLinks}></div>
+    </footer>
   )
 }
 

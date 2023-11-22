@@ -1,0 +1,54 @@
+section {
+  width: 100vw;
+  background-image: url("../../images/bright_green_clover_field.jpg");
+  background-position: center;
+  background-size:contain
+}
+
+/* ^ Intro Section */
+
+.intro {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+.intro h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.intro h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* ^ Stats Section */
+
+.stats {
+  background: rgba(112, 149, 9, .85);
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.statsContainer{
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.statsIcon{
+  height: 160px;
+  aspect-ratio: 1/1;
+  background-color: #DB8EBE;
+  border-radius: 80px;
+}
+.statsTitle{
+  font-size: 26px;
+  color: #DB8EBE;
+}

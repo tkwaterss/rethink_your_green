@@ -21,27 +21,27 @@ const Header = () => {
         <nav>
           <ul className={classes.navLinksList}>
             <li>
-              <NavLink style={activeStyle} to="why_clover">
+              <NavLink style={activeStyle} to="/why_clover">
                 Why Clover?
               </NavLink>
             </li>
             <li>
-              <NavLink style={activeStyle} to="success_stories">
+              <NavLink style={activeStyle} to="/success_stories">
                 Success Stories
               </NavLink>
             </li>
             <li>
-              <NavLink style={activeStyle} to="about">
+              <NavLink style={activeStyle} to="/about">
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink style={activeStyle} to="blog">
+              <NavLink style={activeStyle} to="/blog">
                 Blog
               </NavLink>
             </li>
             <li>
-              <NavLink style={activeStyle} to="contact">
+              <NavLink style={activeStyle} to="/contact">
                 Contact
               </NavLink>
             </li>

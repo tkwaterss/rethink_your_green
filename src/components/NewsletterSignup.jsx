@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./NewsletterSignup.module.css";
 import { useFormik } from "formik";
 
-const NewsletterSignup = () => {
+const NewsletterSignup = ({className}) => {
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -15,7 +15,7 @@ const NewsletterSignup = () => {
   });
 
   return (
-    <div className={classes.newsletterSignupContainer}>
+    <div className={`${classes.newsletterSignupContainer} ${className}`}>
       <h5 className={classes.newsletterSignupLabel}>Newsletter Signup:</h5>
       <form
         onSubmit={formik.handleSubmit}

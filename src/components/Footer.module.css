@@ -1,6 +1,56 @@
 footer {
   width: 100vw;
   background-color: #366314;
-  height: 200px;
+  color: white;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px;
+}
 
+.companyInfo {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.companyLogo {
+  height: 160px;
+  border-radius: 20px;
+}
+
+.contactContainer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newsletterSignup {
+  align-self: start;
+}
+
+
+.linksContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.siteLinks {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.siteLinks a {
+  text-decoration: none;
+  color: #D3E181;
+}
+.siteLinks a:hover {
+  text-decoration: underline;
+}
+.socialLinks {
+  font-size: 30px;
+  display: flex;
+  gap: 16px;
 }

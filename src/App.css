@@ -12,3 +12,26 @@ html {
 body {
   font-family: 'Montserrat';
 }
+h1{
+  font-size: 60px;
+  font-weight: 600;
+}
+h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-size: 24px;
+}
+h5{
+  font-size: 20px;
+}
+h6{
+  font-size: 18px;
+}
+p{
+  font-size: 16px;
+}

@@ -54,3 +54,10 @@ footer {
   display: flex;
   gap: 16px;
 }
+.socialLink {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.socialLink:hover {
+  padding: 2px;
+}

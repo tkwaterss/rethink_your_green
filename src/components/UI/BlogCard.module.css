@@ -6,6 +6,12 @@
   width: 400px;
   border-radius: 20px;
   padding: 16px;
+  box-shadow: 2px 2px 4px 0px #366314;
+}
+.blogCard:hover {
+  box-shadow: 5px 5px 8px 0px #366314;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .blogDescription {
   display: flex;

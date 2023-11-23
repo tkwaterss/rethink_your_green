@@ -21,7 +21,7 @@ const Footer = () => {
           <p>(123) 456 7890</p>
           <p>info@rethinkyourgreen.com</p>
         </div>
-        <NewsLetterSignup className={classes.newsletterSignup}/>
+        <NewsLetterSignup className={classes.newsletterSignup} />
       </div>
       <div className={classes.linksContainer}>
         <ul className={classes.siteLinks}>
@@ -45,10 +45,10 @@ const Footer = () => {
           </li>
         </ul>
         <div className={classes.socialLinks}>
-          <FaFacebook />
-          <FaLinkedin />
-          <FaInstagram />
-          <FaTwitter />
+          <FaFacebook className={classes.socialLink} />
+          <FaLinkedin className={classes.socialLink} />
+          <FaInstagram className={classes.socialLink} />
+          <FaTwitter className={classes.socialLink} />
         </div>
       </div>
     </footer>

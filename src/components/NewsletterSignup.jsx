@@ -17,7 +17,10 @@ const NewsletterSignup = () => {
   return (
     <div className={classes.newsletterSignupContainer}>
       <h5 className={classes.newsletterSignupLabel}>Newsletter Signup:</h5>
-      <form onSubmit={formik.handleSubmit} className={classes.newsletterSignupForm}>
+      <form
+        onSubmit={formik.handleSubmit}
+        className={classes.newsletterSignupForm}
+      >
         <input
           type="email"
           id="email"
@@ -27,7 +30,9 @@ const NewsletterSignup = () => {
           className={classes.newsletterSignupInput}
           placeholder="youremail@email.com"
         ></input>
-        <button type="submit" className={classes.newsletterSignupButton}>Submit</button>
+        <button type="submit" className={classes.newsletterSignupButton}>
+          Submit
+        </button>
       </form>
     </div>
   );

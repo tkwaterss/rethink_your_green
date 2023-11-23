@@ -47,7 +47,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <NewsletterSignup/>
+        <NewsletterSignup />
       </div>
     </header>
   );

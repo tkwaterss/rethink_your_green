@@ -5,7 +5,7 @@ import SuccessStoryCard from "../UI/SuccessStoryCard";
 const HomeSuccess = () => {
   return (
     <section className={classes.successStoriesSection}>
-      <h3>Success Stories</h3>
+      <h2>Success Stories</h2>
       <div className={classes.successStories}>
         <SuccessStoryCard />
         <SuccessStoryCard />

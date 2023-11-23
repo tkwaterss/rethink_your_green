@@ -5,7 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 160px;
   padding: 0 40px;
 }
 .rightHeader {
@@ -17,7 +17,7 @@ header {
 
 /*^ Logo */
 .companyLogo {
-  height: 160px;
+  height: 120px;
   border-radius: 20px;
 }
 .companyLogo:hover {

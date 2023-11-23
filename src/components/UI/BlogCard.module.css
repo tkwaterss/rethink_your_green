@@ -1,0 +1,22 @@
+.blogCard {
+  background-image: url('../../images/clover_field.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 400px;
+  border-radius: 20px;
+  padding: 16px;
+}
+.blogDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.blogDescription p {
+  line-height: 1.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

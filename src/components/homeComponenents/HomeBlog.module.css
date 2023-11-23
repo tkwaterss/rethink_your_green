@@ -1,0 +1,17 @@
+.blogSection {
+  background-color: #6E9309;
+  width: 100vw;
+}
+.blogSection h3 {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+.blogCardContainer {
+  padding: 40px 80px 60px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}

@@ -9,8 +9,7 @@
 .successStoryCard:hover {
   box-shadow: 5px 5px 8px 0px #366314;
   cursor: pointer;
-  transition: all 0.2s ease-in-out
-  
+  transition: all 0.2s ease-in-out;
 }
 .storyImage {
   background-image: url("../../images/verticle_clover_field.jpg");
@@ -29,7 +28,6 @@
   line-height: 2em;
 }
 .storyDescription p {
-  font-size: 16px;
   line-height: 1.5em;
   display: -webkit-box;
   -webkit-line-clamp: 4;

@@ -1,0 +1,47 @@
+@keyframes rotateInAnimation {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.section {
+  transform-origin: bottom right;
+  animation: 1s ease 0s 1 rotateInAnimation;
+}
+
+/** Desktop Styling */
+
+@media screen and (min-width: 800px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+  }
+  h2 {
+    color: #012877;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .inputsBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+  .sendBtnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+}

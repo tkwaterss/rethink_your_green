@@ -1,16 +1,16 @@
 button {
-  background-color: #012877;
+  background-color: #366314;
   color: #F2F2F2;
   border: none;
   border-radius: 4px;
   font-size: 1.25em;
   padding: 15px 30px;
-  box-shadow: 0 2px 5px .1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px .1px #36631433;
   letter-spacing: .6px;
 }
 button:hover {
-  background-color: #012877ce;
-  box-shadow: 0 3px 5px .1px rgba(0, 0, 0, 0.4);
+  background-color: #366314dd;
+  box-shadow: 2px 2px 5px .1px #36631466;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }

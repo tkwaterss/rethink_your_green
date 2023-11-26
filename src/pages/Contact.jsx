@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={classes.section}>
+    <section className={classes.contactSection}>
       <form ref={form} onSubmit={sendEmail} className={classes.contactForm}>
         <h2>Get In Touch!</h2>
         <p>

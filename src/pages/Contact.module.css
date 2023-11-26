@@ -6,7 +6,7 @@
     transform: rotate(0deg);
   }
 }
-.section {
+.contactSection {
   transform-origin: bottom right;
   animation: 1s ease 0s 1 rotateInAnimation;
 }
@@ -14,15 +14,16 @@
 /** Desktop Styling */
 
 @media screen and (min-width: 800px) {
-  .section {
+  .contactSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 600px;
     margin: 0 auto;
+    padding: 60px;
   }
-  h2 {
-    color: #012877;
+  .contactSection h2 {
+    color: #366314;
   }
   .inputContainer {
     display: flex;

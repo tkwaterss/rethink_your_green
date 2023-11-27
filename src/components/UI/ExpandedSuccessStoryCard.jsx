@@ -1,13 +1,14 @@
 import React from "react";
+import classes from "./ExpandedSuccessStoryCard.module.css";
 
 const ExpandedSuccessStoryCard = () => {
   return (
-    <div>
-      <div>
-        <h1>Some Story Title</h1>
+    <div className={classes.storyCardContainer}>
+      <div className={classes.storyCardText}>
+        <h3>Some Story Title</h3>
         <p>Story Description</p>
       </div>
-      <div>
+      <div className={classes.storyCardImage}>
         Story Photo Here
       </div>
     </div>

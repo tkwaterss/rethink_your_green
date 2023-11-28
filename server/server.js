@@ -5,6 +5,9 @@ require("dotenv").config();
 const db = require("./util/database");
 const seed = require("./util/seed");
 const { Contact, Story, Blog } = require("./util/models");
+const path = require("path");
+
+const { getStories, getBlogs } = require("./controllers/content");
 
 //^ Variables
 
@@ -15,10 +18,14 @@ const { PORT } = process.env;
 
 server.use(express.json());
 server.use(cors());
+// server.use(express.static(path.join(__dirname, "../src")));
+
+//^ Endpoints
+server.get("/stories", getStories);
+server.get("/blogs", getBlogs);
 
 //^ Database sycn and seed
-db
-  .sync()
+db.sync()
   // .sync({ force: true })
   .then(() => {
     // seed();

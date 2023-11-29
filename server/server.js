@@ -3,11 +3,29 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const db = require("./util/database");
-const seed = require("./util/seed");
-const { Contact, Story, Blog } = require("./util/models");
-const path = require("path");
+// const seed = require("./util/seed");
+// const path = require("path");
 
-const { getStories, getBlogs } = require("./controllers/content");
+const {
+  getStories,
+  addStory,
+  editStory,
+  deleteStory,
+} = require("./controllers/stories");
+const {
+  getBlogs,
+  addBlog,
+  editBlog,
+  deleteBlog,
+} = require("./controllers/blogs");
+const {
+  getContacts,
+  searchContacts,
+  getContactById,
+  addContact,
+  editContact,
+  deleteContact,
+} = require("./controllers/contacts");
 
 //^ Variables
 
@@ -21,8 +39,23 @@ server.use(cors());
 // server.use(express.static(path.join(__dirname, "../src")));
 
 //^ Endpoints
+
 server.get("/stories", getStories);
+server.post("/stories", addStory);
+server.put("/stories", editStory);
+server.delete("/stories", deleteStory);
+
 server.get("/blogs", getBlogs);
+server.post("/blogs", addBlog);
+server.put("/blogs", editBlog);
+server.delete("/blogs", deleteBlog);
+
+server.get('/contacts', getContacts);
+server.get("/contact/:contactId", getContactById);
+server.get("/search/contacts", searchContacts);
+server.post("/contacts", addContact);
+server.put("/contacts", editContact);
+server.delete("/contacts", deleteContact);
 
 //^ Database sycn and seed
 db.sync()

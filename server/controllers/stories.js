@@ -1,4 +1,4 @@
-const { Story, Blog } = require("../util/models");
+const { Story } = require("../util/models");
 const { Op } = require("sequelize");
 
 module.exports = {
@@ -13,15 +13,13 @@ module.exports = {
       res.sendStatus(400);
     }
   },
-  getBlogs: async (req, res) => {
-    try {
-      const blogs = await Blog.findAll({
-        limit: 4,
-      });
-      res.status(200).send(blogs);
-    } catch (err) {
-      console.log(err, "error in getBlogs");
-      res.sendStatus(400);
-    }
+  addStory: async (req, res) => {
+    
   },
+  editStory: async (req, res) => {
+
+  },
+  deleteStory: async (req, res) => {
+
+  }
 };

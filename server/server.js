@@ -42,20 +42,20 @@ server.use(cors());
 
 server.get("/stories", getStories);
 server.post("/stories", addStory);
-server.put("/stories", editStory);
-server.delete("/stories", deleteStory);
+server.put("/stories/:storyId", editStory);
+server.delete("/stories/:storyId", deleteStory);
 
 server.get("/blogs", getBlogs);
 server.post("/blogs", addBlog);
-server.put("/blogs", editBlog);
-server.delete("/blogs", deleteBlog);
+server.put("/blogs/:blogId", editBlog);
+server.delete("/blogs/:blogId", deleteBlog);
 
 server.get('/contacts', getContacts);
 server.get("/contact/:contactId", getContactById);
 server.get("/search/contacts", searchContacts);
 server.post("/contacts", addContact);
-server.put("/contacts", editContact);
-server.delete("/contacts", deleteContact);
+server.put("/contacts/:contactId", editContact);
+server.delete("/contacts/:contactId", deleteContact);
 
 //^ Database sycn and seed
 db.sync()

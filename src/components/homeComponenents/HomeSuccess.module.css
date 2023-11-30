@@ -15,3 +15,8 @@
   gap: 80px;
   flex-wrap: wrap;
 }
+.newsletterSignup {
+  width:fit-content;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}

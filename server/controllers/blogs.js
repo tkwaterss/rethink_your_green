@@ -18,7 +18,17 @@ module.exports = {
       const newBlog = await Blog.create(req.body);
       res.satus(200).send(newBlog);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in addBlog");
+      res.sendStatus(400);
+    }
+  },
+  getBlogById: async (req, res) => {
+    const { blogId } = req.params;
+    try {
+      const blog = await Blog.findByPk(blogId)
+      res.status(200).send(blog)
+    } catch (err) {
+      console.log(err, "error in getBlogById")
       res.sendStatus(400);
     }
   },
@@ -30,7 +40,7 @@ module.exports = {
       await blog.save();
       res.sendStatus(200);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in editBlog");
       res.sendStatus(400);
     }
   },
@@ -40,7 +50,7 @@ module.exports = {
       await Blog.destroy({ where: { id: +blogId } });
       res.sendStatus(200);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in deleteBlog");
       res.sendStatus(400);
     }
   },

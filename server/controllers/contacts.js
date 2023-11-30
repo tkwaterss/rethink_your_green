@@ -10,7 +10,7 @@ module.exports = {
       });
       res.status(200).send(contacts);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in getContacts");
       res.sendStatus(400);
     }
   },
@@ -23,7 +23,7 @@ module.exports = {
       });
       res.status(200).send(contacts);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in searchContacts");
       res.sendStatus(400);
     }
   },
@@ -34,7 +34,7 @@ module.exports = {
       const contact = await Contact.findByPk(contactId);
       res.status(200).send(contact);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in getContactById");
       res.sendStatus(400);
     }
   },
@@ -44,7 +44,7 @@ module.exports = {
       const newContact = await Contact.create(req.body);
       res.status(200).send(newContact);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in addContact");
       res.sendStatus(400);
     }
   },
@@ -57,7 +57,7 @@ module.exports = {
       await contact.save();
       res.sendStatus(200);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in editContact");
       res.sendStatus(400);
     }
   },
@@ -67,7 +67,7 @@ module.exports = {
     try {
       await Contact.destroy({ where: { id: +contactId } });
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in deleteContact");
       res.sendStatus(400);
     }
   },

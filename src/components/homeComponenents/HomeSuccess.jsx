@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import classes from "./HomeSuccess.module.css";
 import SuccessStoryCard from "../UI/SuccessStoryCard";
 import axios from "axios";
+import NewsletterSignup from '../NewsletterSignup';
 
 const HomeSuccess = () => {
   const [stories, setStories] = useState([]);
@@ -30,6 +31,7 @@ const HomeSuccess = () => {
     <section className={classes.successStoriesSection}>
       <h2>Success Stories</h2>
       <div className={classes.successStories}>{storyCards}</div>
+      <NewsletterSignup className={classes.newsletterSignup}/>
     </section>
   );
 };

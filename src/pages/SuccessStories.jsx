@@ -18,7 +18,7 @@ const SuccessStories = () => {
     return (
       <ExpandedSuccessStoryCard
         key={story.id}
-        id={story.id}
+        storyId={story.id}
         storyTitle={story.storyTitle}
         storyDescription={story.storyDescription}
         storyPhoto={story.storyPhoto}

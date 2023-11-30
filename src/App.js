@@ -8,6 +8,7 @@ import SuccessStories from "./pages/SuccessStories";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import SuccessStory from "./pages/SuccessStory";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/story/:storyId" element={<SuccessStory />} />
         </Routes>
       </main>
       <Footer />

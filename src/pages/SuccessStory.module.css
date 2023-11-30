@@ -1,0 +1,17 @@
+.successStorySection {
+  background-color: #D3E181;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 40px;
+}
+.successStorySection p {
+  width: 800px;
+  text-align: justify;
+}
+.storyImage {
+  height: 400px;
+  width:fit-content;
+  border-radius: 20px;
+}

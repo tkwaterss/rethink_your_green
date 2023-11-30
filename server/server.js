@@ -8,12 +8,14 @@ const seed = require("./util/seed");
 
 const {
   getStories,
+  getStoryById,
   addStory,
   editStory,
   deleteStory,
 } = require("./controllers/stories");
 const {
   getBlogs,
+  getBlogById,
   addBlog,
   editBlog,
   deleteBlog,
@@ -41,11 +43,13 @@ server.use(cors());
 //^ Endpoints
 
 server.get("/stories", getStories);
+server.get("/stories/:storyId", getStoryById);
 server.post("/stories", addStory);
 server.put("/stories/:storyId", editStory);
 server.delete("/stories/:storyId", deleteStory);
 
 server.get("/blogs", getBlogs);
+server.get("/blogs/:blogId", getBlogById);
 server.post("/blogs", addBlog);
 server.put("/blogs/:blogId", editBlog);
 server.delete("/blogs/:blogId", deleteBlog);

@@ -13,12 +13,22 @@ module.exports = {
       res.sendStatus(400);
     }
   },
+  getStoryById: async (req, res) => {
+    const { storyId } = req.params;
+    try {
+      const story = await Story.findByPk(storyId)
+      res.status(200).send(story)
+    } catch (err) {
+      console.log(err, "error in getStoryById")
+      res.sendStatus(400);
+    }
+  },
   addStory: async (req, res) => {
     try {
       const newStory = await Story.create(req.body);
       res.status(200).send(newStory);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in addStory");
       res.sendStatus(400);
     }
   },
@@ -30,7 +40,7 @@ module.exports = {
       await story.save();
       res.sendStatus(200);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in editStory");
       res.sendStatus(400);
     }
   },
@@ -40,7 +50,7 @@ module.exports = {
       await Story.destroy({ where: { id: +storyId } });
       res.sendStatus(200);
     } catch (err) {
-      console.log(err, "error in ");
+      console.log(err, "error in deleteStory");
       res.sendStatus(400);
     }
   },

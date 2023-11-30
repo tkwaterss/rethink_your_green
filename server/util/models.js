@@ -27,7 +27,7 @@ module.exports = {
     },
     storyTitle: DataTypes.STRING,
     storyDescription: DataTypes.TEXT,
-    storyPhoto: DataTypes.STRING,
+    storyPhoto: DataTypes.TEXT,
   }),
   Blog: db.define("blog", {
     id: {
@@ -38,7 +38,7 @@ module.exports = {
     },
     blogTitle: DataTypes.STRING,
     blogDescription: DataTypes.TEXT,
-    blogPhoto: DataTypes.STRING,
+    blogPhoto: DataTypes.TEXT,
     blogLink: DataTypes.STRING,
   })
 }

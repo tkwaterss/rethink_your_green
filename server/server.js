@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const db = require("./util/database");
-// const seed = require("./util/seed");
+const seed = require("./util/seed");
 // const path = require("path");
 
 const {
@@ -58,7 +58,8 @@ server.put("/contacts/:contactId", editContact);
 server.delete("/contacts/:contactId", deleteContact);
 
 //^ Database sycn and seed
-db.sync()
+db
+  .sync()
   // .sync({ force: true })
   .then(() => {
     // seed();

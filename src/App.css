@@ -11,6 +11,8 @@ html {
 
 body {
   font-family: 'Montserrat';
+  width: 100vw;
+  max-width: 100%;
 }
 h1{
   font-size: 60px;

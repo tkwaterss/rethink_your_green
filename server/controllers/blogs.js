@@ -5,7 +5,7 @@ module.exports = {
   getBlogs: async (req, res) => {
     try {
       const blogs = await Blog.findAll({
-        limit: 4,
+        limit: 6,
       });
       res.status(200).send(blogs);
     } catch (err) {

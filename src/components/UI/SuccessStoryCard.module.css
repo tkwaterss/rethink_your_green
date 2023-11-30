@@ -12,7 +12,6 @@
   transition: all 0.2s ease-in-out;
 }
 .storyImage {
-  background-image: url("../../images/verticle_clover_field.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;

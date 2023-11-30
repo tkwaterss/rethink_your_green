@@ -8,11 +8,11 @@ const ExpandedSuccessStoryCard = ({
 }) => {
   return (
     <div className={classes.storyCardContainer}>
+      <div className={classes.storyCardImage} style={{backgroundImage: `url(${storyPhoto})`}}></div>
       <div className={classes.storyCardText}>
         <h3>{storyTitle}</h3>
         <p>{storyDescription}</p>
       </div>
-      <div className={classes.storyCardImage}>{storyPhoto}</div>
     </div>
   );
 };

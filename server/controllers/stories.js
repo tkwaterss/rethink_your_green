@@ -5,7 +5,7 @@ module.exports = {
   getStories: async (req, res) => {
     try {
       const stories = await Story.findAll({
-        limit: 10,
+        limit: 6,
       });
       res.status(200).send(stories);
     } catch (err) {

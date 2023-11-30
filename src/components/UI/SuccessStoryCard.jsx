@@ -6,7 +6,7 @@ import classes from "./SuccessStoryCard.module.css";
 const SuccessStoryCard = ({ storyTitle, storyDescription, storyPhoto }) => {
   return (
     <div className={classes.successStoryCard}>
-      <div className={classes.storyImage} />
+      <div className={classes.storyImage} style={{backgroundImage: `url(${storyPhoto})`}}/>
       <div className={classes.storyDescription}>
         <h4>{storyTitle}</h4>
         <p>{storyDescription}</p>

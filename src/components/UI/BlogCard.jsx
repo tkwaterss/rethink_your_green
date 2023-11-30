@@ -1,17 +1,15 @@
-import React from 'react'
-import classes from './BlogCard.module.css';
+import React from "react";
+import classes from "./BlogCard.module.css";
 
-const BlogCard = () => {
+const BlogCard = ({ blogTitle, blogDescription, blogPhoto, blogLink }) => {
   return (
     <div className={classes.blogCard}>
       <div className={classes.blogDescription}>
-        <h4>Going Clover</h4>
-        <p>
-        In this article we discuss some of the primary reasons to convert your lawn to clover. We'll cover the sustainability, maintainability, and beauty of clover. Keep reading to find out more.
-        </p>
+        <h4>{blogTitle}</h4>
+        <p>{blogDescription}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

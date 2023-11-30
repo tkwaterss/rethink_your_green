@@ -1,19 +1,15 @@
 import React from "react";
 import classes from "./SuccessStoryCard.module.css";
 
-//TODO Card content will be supplied from database eventually
+//TODO background image CSS needs to be inline and pulled from props
 
-const SuccessStoryCard = () => {
+const SuccessStoryCard = ({ storyTitle, storyDescription, storyPhoto }) => {
   return (
     <div className={classes.successStoryCard}>
       <div className={classes.storyImage} />
       <div className={classes.storyDescription}>
-        <h4>Huge Success</h4>
-        <p>
-          This project went great, Lawn looks amazing now. We encountered some
-          difficulties but persivered and delivered another amazing product.
-          Another line about the project to make the text overflow.
-        </p>
+        <h4>{storyTitle}</h4>
+        <p>{storyDescription}</p>
       </div>
     </div>
   );

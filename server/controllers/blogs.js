@@ -2,6 +2,7 @@ const { Blog } = require("../util/models");
 const { Op } = require("sequelize");
 
 module.exports = {
+  //sort by most recent
   getBlogs: async (req, res) => {
     try {
       const blogs = await Blog.findAll({
@@ -13,15 +14,6 @@ module.exports = {
       res.sendStatus(400);
     }
   },
-  addBlog: async (req, res) => {
-    try {
-      const newBlog = await Blog.create(req.body);
-      res.satus(200).send(newBlog);
-    } catch (err) {
-      console.log(err, "error in addBlog");
-      res.sendStatus(400);
-    }
-  },
   getBlogById: async (req, res) => {
     const { blogId } = req.params;
     try {
@@ -29,6 +21,15 @@ module.exports = {
       res.status(200).send(blog)
     } catch (err) {
       console.log(err, "error in getBlogById")
+      res.sendStatus(400);
+    }
+  },
+  addBlog: async (req, res) => {
+    try {
+      const newBlog = await Blog.create(req.body);
+      res.status(200).send(newBlog);
+    } catch (err) {
+      console.log(err, "error in addBlog");
       res.sendStatus(400);
     }
   },

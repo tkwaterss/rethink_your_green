@@ -1,4 +1,4 @@
-.successStorySection {
+.blogSection {
   background-color: #D3E181;
   display: flex;
   flex-direction: column;
@@ -6,11 +6,11 @@
   align-items: center;
   padding: 40px;
 }
-.successStorySection p {
+.blogSection p {
   width: 800px;
   text-align: justify;
 }
-.storyImage {
+.blogImage {
   height: 400px;
   width:fit-content;
   border-radius: 20px;

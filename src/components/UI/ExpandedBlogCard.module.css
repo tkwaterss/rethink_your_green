@@ -1,4 +1,4 @@
-.storyCardContainer {
+.blogCardContainer {
   height: 300px;
   width: 800px;
   background-color: white;
@@ -8,23 +8,23 @@
   text-decoration: none;
   color: black;
 }
-.storyCardContainer:hover {
+.blogCardContainer:hover {
   box-shadow: 5px 5px 8px 0px #366314;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-.storyCardText {
+.blogCardText {
   width: 50%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.storyCardText h3 {
+.blogCardText h3 {
   text-align: center;
 }
-.storyCardText p {
+.blogCardText p {
   line-height: 1.5em;
   text-align: justify;
   display: -webkit-box;
@@ -33,7 +33,7 @@
   overflow: hidden;
 
 }
-.storyCardImage {
+.blogCardImage {
   width: 50%;
   border-radius: 20px 0 0 20px;
   background-size: cover;

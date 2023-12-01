@@ -18,17 +18,6 @@ module.exports = {
     lead: DataTypes.BOOLEAN,
     notes: DataTypes.TEXT,
   }),
-  Story: db.define("story", {
-    id: {
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-      type: DataTypes.INTEGER,
-    },
-    storyTitle: DataTypes.STRING,
-    storyDescription: DataTypes.TEXT,
-    storyPhoto: DataTypes.TEXT,
-  }),
   Blog: db.define("blog", {
     id: {
       allowNull: false,

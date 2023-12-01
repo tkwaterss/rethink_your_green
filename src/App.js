@@ -4,11 +4,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import WhyClover from "./pages/WhyClover";
-import SuccessStories from "./pages/SuccessStories";
-import About from "./pages/About";
 import Blog from "./pages/Blog";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
-import SuccessStory from "./pages/SuccessStory";
+import BlogDetails from "./pages/BlogDetails";
 
 function App() {
   return (
@@ -18,11 +17,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/why_clover" element={<WhyClover />} />
-          <Route path="/success_stories" element={<SuccessStories />} />
-          <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/story/:storyId" element={<SuccessStory />} />
+          <Route path="/blog/:blogId" element={<BlogDetails />} />
         </Routes>
       </main>
       <Footer />

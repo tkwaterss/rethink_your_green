@@ -7,13 +7,6 @@ const seed = require("./util/seed");
 // const path = require("path");
 
 const {
-  getStories,
-  getStoryById,
-  addStory,
-  editStory,
-  deleteStory,
-} = require("./controllers/stories");
-const {
   getBlogs,
   getBlogById,
   addBlog,
@@ -41,12 +34,6 @@ server.use(cors());
 // server.use(express.static(path.join(__dirname, "../src")));
 
 //^ Endpoints
-
-server.get("/stories", getStories);
-server.get("/stories/:storyId", getStoryById);
-server.post("/stories", addStory);
-server.put("/stories/:storyId", editStory);
-server.delete("/stories/:storyId", deleteStory);
 
 server.get("/blogs", getBlogs);
 server.get("/blogs/:blogId", getBlogById);

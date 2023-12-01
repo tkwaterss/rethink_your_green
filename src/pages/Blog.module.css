@@ -1,0 +1,14 @@
+.blogPage {
+  background-color: #D3E181;
+  padding: 40px;
+}
+.blogPage h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.blogCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}

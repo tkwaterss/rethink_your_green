@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header>
       <NavLink to="/">
-        <img className={classes.companyLogo} src={company_logo} />
+        <img className={classes.companyLogo} src={company_logo} alt="Company Logo"/>
       </NavLink>
       <div className={classes.rightHeader}>
         <nav>
@@ -26,18 +26,13 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink style={activeStyle} to="/success_stories">
-                Success Stories
+              <NavLink style={activeStyle} to="/blog">
+                Blog
               </NavLink>
             </li>
             <li>
               <NavLink style={activeStyle} to="/about">
                 About Us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink style={activeStyle} to="/blog">
-                Blog
               </NavLink>
             </li>
             <li>

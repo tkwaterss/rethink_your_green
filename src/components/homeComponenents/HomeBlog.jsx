@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import classes from "./HomeBlog.module.css";
 import BlogCard from "../UI/BlogCard";
 import axios from "axios";
+import NewsletterSignup from '../NewsletterSignup';
 
 const HomeBlog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -18,18 +19,19 @@ const HomeBlog = () => {
     return (
       <BlogCard
         key={blog.id}
-        id={blog.id}
+        blogId={blog.id}
         blogTitle={blog.blogTitle}
-        blogPhoto={blog.blogPhoto}
         blogDescription={blog.blogDescription}
+        blogPhoto={blog.blogPhoto}
       />
     );
   });
 
   return (
-    <section className={classes.blogSection}>
-      <h3>Blog / Media</h3>
-      <div className={classes.blogCardContainer}>{blogCards}</div>
+    <section className={classes.blogsSection}>
+      <h2>Success Stories</h2>
+      <div className={classes.blogs}>{blogCards}</div>
+      <NewsletterSignup className={classes.newsletterSignup}/>
     </section>
   );
 };

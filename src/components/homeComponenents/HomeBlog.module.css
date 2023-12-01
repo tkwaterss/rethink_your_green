@@ -1,16 +1,22 @@
-.blogSection {
-  background-color: #6E9309;
+.blogsSection {
+  background-color: rgba(112, 149, 9);
 }
-.blogSection h3 {
+.blogsSection h2 {
   text-align: center;
   padding-top: 20px;
   color: white;
 }
-.blogCardContainer {
+
+.blogs {
   padding: 40px 80px 60px 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 80px;
+  flex-wrap: wrap;
+}
+.newsletterSignup {
+  width:fit-content;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }

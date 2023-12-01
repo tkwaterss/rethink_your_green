@@ -32,13 +32,10 @@ const Footer = () => {
             <Link to="/why_clover">Why Clover?</Link>
           </li>
           <li>
-            <Link to="/success_stories">Success Stories</Link>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
             <Link to="/about">About Us</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
           </li>
           <li>
             <Link to="/contact">Contact Us</Link>

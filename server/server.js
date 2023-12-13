@@ -21,6 +21,7 @@ const {
   editContact,
   deleteContact,
 } = require("./controllers/contacts");
+const { login } = require('./controllers/auth');
 
 //^ Variables
 
@@ -34,6 +35,8 @@ server.use(cors());
 // server.use(express.static(path.join(__dirname, "../src")));
 
 //^ Endpoints
+
+server.post('/login', login);
 
 server.get("/blogs", getBlogs);
 server.get("/blogs/:blogId", getBlogById);

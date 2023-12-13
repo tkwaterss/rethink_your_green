@@ -39,10 +39,8 @@
   justify-content: space-evenly;
 }
 .statsIcon {
-  height: 160px;
-  aspect-ratio: 1/1;
-  background-color: white;
-  border-radius: 80px;
+  font-size: 140px;
+  color: white;
 }
 .statsTitle {
   color: white;

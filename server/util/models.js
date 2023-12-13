@@ -29,5 +29,18 @@ module.exports = {
     blogDescription: DataTypes.TEXT,
     blogPhoto: DataTypes.TEXT,
     blogLink: DataTypes.STRING,
+  }),
+  Admin: db.define('admin', {
+    id: {
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+      type: DataTypes.INTEGER,
+    },
+    firstname: DataTypes.STRING(50),
+    lastname: DataTypes.STRING(50),
+    email: DataTypes.STRING,
+    phone: DataTypes.STRING(10),
+    hashedPass: DataTypes.STRING,
   })
 }

@@ -1,5 +1,8 @@
 import React from "react";
 import classes from "./HomeIntro.module.css";
+import { RiLandscapeFill } from "react-icons/ri";
+import { GrServices } from "react-icons/gr";
+import { GiWaterRecycling } from "react-icons/gi";
 
 const HomeIntro = () => {
   return (
@@ -10,15 +13,15 @@ const HomeIntro = () => {
       </div>
       <div className={classes.stats}>
         <div className={classes.statsContainer}>
-          <div className={classes.statsIcon}></div>
+          <RiLandscapeFill className={classes.statsIcon}></RiLandscapeFill>
           <h3 className={classes.statsTitle}>Looks Great</h3>
         </div>
         <div className={classes.statsContainer}>
-          <div className={classes.statsIcon}></div>
+          <GiWaterRecycling className={classes.statsIcon}></GiWaterRecycling>
           <h3 className={classes.statsTitle}>Less Water</h3>
         </div>
         <div className={classes.statsContainer}>
-          <div className={classes.statsIcon}></div>
+          <GrServices className={classes.statsIcon}></GrServices>
           <h3 className={classes.statsTitle}>Low Maintenance</h3>
         </div>
       </div>

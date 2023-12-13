@@ -1,6 +1,7 @@
 const {
   Contact,
   Blog,
+  Admin,
 } = require('./models');
 
 const contacts = [
@@ -27,11 +28,15 @@ const blogs = [
   {blogTitle: "Clover Economics", blogDescription: "Ullamco consectetur consequat consectetur reprehenderit. Excepteur magna Lorem nulla enim mollit ea amet. Nostrud proident anim cillum velit. Ea consectetur elit minim laborum culpa exercitation do proident incididunt exercitation in nulla aute excepteur. Consectetur eu amet id consequat magna sint ut ad. Elit id officia exercitation nulla dolor dolore deserunt non elit Lorem deserunt.", blogPhoto: "https://preview.redd.it/c90v2wrag0u61.jpg?width=960&crop=smart&auto=webp&s=87781f6998d13a6d9579307af21e4367a1e257a1", blogLink: ""},
   {blogTitle: "Why Clover?", blogDescription: "Eiusmod voluptate elit sint fugiat magna. Qui et et nulla amet consequat enim minim nostrud culpa. Et fugiat aliquip laborum qui. Est irure ullamco duis aliquip elit dolor labore et elit ex officia ipsum ullamco ex. Eu eu ut mollit incididunt elit anim occaecat consequat fugiat mollit ullamco proident. Consequat voluptate enim pariatur esse sint aliqua ullamco duis consequat reprehenderit magna ea eu velit.", blogPhoto: "https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/d/69/d69408ec-e9fd-11ed-a66a-b7b80e56a178/6452d95b6b72a.image.jpg?resize=946%2C500", blogLink: ""}
 ]
+const admins = [
+  {firstname: 'Tobin', lastname: 'Waters', email: 'tkwaterss@gmail.com', phone: '6179214234'}
+]
 
 const seed = async () => {
   try {
     await Contact.bulkCreate(contacts)
     await Blog.bulkCreate(blogs);
+    await Admin.bulkCreate(admins);
   }
   catch(err) {
     console.log(err)

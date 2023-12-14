@@ -10,6 +10,9 @@ const Input = (props) => {
         name={props.name}
         className={classes.formField}
         placeholder={props.placeholder}
+        value={props.value}
+        onChange={props.onChange}
+        onBlur={props.onBlur}
       />
       <label htmlFor={props.id} className={classes.formLabel}>
         {props.children}

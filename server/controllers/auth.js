@@ -9,6 +9,50 @@ const createToken = (email, id) => {
 };
 
 module.exports = {
+  register: async (req, res) => {
+    console.log(req.body);
+    try {
+      const { firstname, lastname, email, password, phone } =
+        req.body;
+
+      //checking if account exists, if so then prompt to login or try different email
+      const emailExists = await Admin.findOne({ where: { email } });
+      const phoneExists = await Admin.findOne({ where: { phone } });
+      if (emailExists) {
+        res.status(400).send("An account using that email already exists");
+      } else if (phoneExists) {
+        res.status(400).send("An account with that phone number already exists");
+      } else {
+        const salt = bcrypt.genSaltSync(10);
+        const hash = bcrypt.hashSync(password, salt);
+        const newAdmin = await Admin.create({
+          firstname: firstname,
+          lastname: lastname,
+          email: email,
+          hashedPass: hash,
+          phone: phone,
+        });
+
+        const token = createToken(
+          newAdmin.dataValues.email,
+          newAdmin.dataValues.id
+        );
+
+        const exp = Date.now() + 1000 * 60 * 60 * 48;
+
+        res.status(201).send({
+          email: newAdmin.dataValues.email,
+          AdminId: newAdmin.dataValues.id,
+          token: token,
+          exp: exp,
+        });
+      }
+    } catch (err) {
+      console.log("Error in register");
+      console.log(err);
+      res.sendStatus(400);
+    }
+  },
   login: async (req, res) => {
     try {
       const { email, password } = req.body;
@@ -28,10 +72,9 @@ module.exports = {
           const exp = Date.now() + 1000 * 60 * 60 * 48;
           res.status(200).send({
             email: admin.dataValues.email,
-            userId: admin.dataValues.id,
+            AdminId: admin.dataValues.id,
             token: token,
             exp: exp,
-            employee: admin.dataValues.employee,
           });
         } else {
           res.status(400).send("Unable to Authenticate");

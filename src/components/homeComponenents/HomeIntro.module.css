@@ -1,7 +1,7 @@
 .homeIntro {
   background-image: url("../../images/bright_green_clover_field.jpg");
   background-position: center;
-  background-size: contain;
+  background-size:cover;
 }
 
 /* ^ Intro Section */

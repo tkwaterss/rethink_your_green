@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import BlogDetails from "./pages/BlogDetails";
 import AdminLogin from "./pages/AdminLogin";
+import AdminRegister from "./pages/AdminRegister";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog/:blogId" element={<BlogDetails />} />
           <Route path="/admin" element={<AdminLogin />} />
+          <Route path="/newAdmin" element={<AdminRegister />} />
         </Routes>
       </main>
       <Footer />

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 import company_logo from "../images/company_logo.png";
 import NewsletterSignup from "./NewsletterSignup";
+import AuthContext from "../store/authContext";
 
 const Header = () => {
+  const authCtx = useContext(AuthContext);
+
   const activeStyle = ({ isActive }) => {
     return {
       color: isActive ? "#A59132" : "",
@@ -15,7 +18,11 @@ const Header = () => {
   return (
     <header>
       <NavLink to="/">
-        <img className={classes.companyLogo} src={company_logo} alt="Company Logo"/>
+        <img
+          className={classes.companyLogo}
+          src={company_logo}
+          alt="Company Logo"
+        />
       </NavLink>
       <div className={classes.rightHeader}>
         <nav>
@@ -40,6 +47,11 @@ const Header = () => {
                 Contact
               </NavLink>
             </li>
+            {authCtx.token && (
+              <li onClick={() => authCtx.logout()}>
+                <NavLink to="/">Logout</NavLink>
+              </li>
+            )}
           </ul>
         </nav>
         <NewsletterSignup />

@@ -52,7 +52,7 @@ export const AuthContextProvider = (props) => {
   //logout function to be called in a component (clears all record of token and userId)
   const logout = useCallback(() => {
     setToken(null);
-
+    console.log('logging out')
     localStorage.clear();
 
     if (logoutTimer) {

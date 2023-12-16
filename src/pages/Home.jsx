@@ -4,6 +4,7 @@ import HomeBlog from "../components/homeComponenents/HomeBlog";
 import HomeAbout from "../components/homeComponenents/HomeAbout";
 
 const Home = () => {
+
   return (
     <>
       <HomeIntro />

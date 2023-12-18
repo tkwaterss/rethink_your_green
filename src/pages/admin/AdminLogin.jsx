@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { useFormik } from "formik";
 import axios from "axios";
-import AuthContext from "../store/authContext";
+import AuthContext from "../../store/authContext";
 import classes from "./AdminLogin.module.css";
-import Input from "../components/UI/Input";
+import Input from "../../components/UI/Input";
 import { useNavigate } from "react-router-dom";
 
 const AdminLogin = (props) => {

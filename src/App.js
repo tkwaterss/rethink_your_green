@@ -1,4 +1,6 @@
 import "./App.css";
+import React, { useContext } from "react";
+import AuthContext from "./store/authContext";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,10 +10,14 @@ import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import BlogDetails from "./pages/BlogDetails";
-import AdminLogin from "./pages/AdminLogin";
-import AdminRegister from "./pages/AdminRegister";
+import AdminLogin from "./pages/admin/AdminLogin";
+import AdminRegister from "./pages/admin/AdminRegister";
+import ManageBlogs from "./pages/admin/ManageBlogs";
+import ManageContacts from "./pages/admin/ManageContacts";
+import NewBlog from "./pages/admin/NewBlog";
 
 function App() {
+  const authCtx = useContext(AuthContext);
   return (
     <div className="App">
       <Header />
@@ -24,7 +30,16 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog/:blogId" element={<BlogDetails />} />
           <Route path="/admin" element={<AdminLogin />} />
-          <Route path="/newAdmin" element={<AdminRegister />} />
+          {authCtx.token && (
+            <Route path="/newAdmin" element={<AdminRegister />} />
+          )}
+          {authCtx.token && (
+            <Route path="/manageBlogs" element={<ManageBlogs />} />
+          )}
+          {authCtx.token && (
+            <Route path="/manageContacts" element={<ManageContacts />} />
+          )}
+          {authCtx.token && <Route path="/newBlog" element={<NewBlog />} />}
         </Routes>
       </main>
       <Footer />

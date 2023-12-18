@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { useFormik } from "formik";
 import axios from "axios";
-import AuthContext from "../store/authContext";
-import Input from "../components/UI/Input";
+import AuthContext from "../../store/authContext";
+import Input from "../../components/UI/Input";
 import classes from "./AdminRegister.module.css";
 
 
